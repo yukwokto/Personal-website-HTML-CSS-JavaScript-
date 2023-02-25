@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="courses.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Courses</title>
+  </head>
+  <body>
+    <header>
+      <div class="preview-header" id="top">
+        <div id="header-logo"><i class="glyphicon glyphicon-cloud"></i></div>
+      </div>
+    </header>
+    <nav>
+      <div class="link-wrapper">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="">Courses</a>
+        <a href="#bottom">Contact</a>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+      <h2 id="wrapper-header">My Courses</h2>
+      <!--Search Bar-->
+      <input
+        type="text"
+        id="myInput"
+        placeholder="Search for Courses..."
+        title="Type in a course name"
+      />
+      <!--Buttons-->
+      <button id="sortBtn">Sort by Level</button>
+      <button id="show-l1">Level 1</button>
+      <button id="show-l2">Level 2</button>
+      <button id="show-all">Show all</button>
+      <!--Table-->
+      <table id="myTable">
+        <tr class="table-header head">
+          <th class="icon">Icon</th>
+          <th class="course-title">Course Title</th>
+          <th class="level">Level</th>
+          <th class="course-code">Course Code</th>
+          <th class="course-des">Course Description</th>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/cal.jpg" alt="calculator icon" /></td>
+          <td class="course-title">
+            Technical Mathematics for Computer Science
+          </td>
+          <td class="level">1</td>
+          <td class="course-code">MAT8001c</td>
+          <td class="course-des">
+            Fundamental Mathematics for computer programmer
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/code.jpg" alt="coding icon" /></td>
+          <td class="course-title">Introduction to Computer Programming</td>
+          <td class="level">1</td>
+          <td class="course-code">CST8116</td>
+          <td class="course-des">
+            Develop introductory knowledge of computer programming with emphasis
+            on problem analysis and design, using algorithms, with the Java
+            programming language used to implement solution designs.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/data.jpg" alt="database icon" /></td>
+          <td class="course-title">Introduction to Database</td>
+          <td class="level">1</td>
+          <td class="course-code">CST8215</td>
+          <td class="course-des">
+            Learning the fundamentals of relational databases design using
+            Entity Relation Diagrams (ERDs), and use Structured Query Language
+            (SQL) to create, modify and query a database.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/pc.jpg" alt="pc icon" /></td>
+          <td class="course-title">Computer Essentials</td>
+          <td class="level">1</td>
+          <td class="course-code">CST8101</td>
+          <td class="course-des">
+            The essentials of computer software, hardware, and laptop management
+            form the foundation for building further technical programming
+            skills.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/web.jpg" alt="website icon" /></td>
+          <td class="course-title">Web Programming</td>
+          <td class="level">2</td>
+          <td class="course-code">CST8285</td>
+          <td class="course-des">
+            Developing basic skills of web programming, website design and
+            implementation.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/java.png" alt="java icon" /></td>
+          <td class="course-title">Object Oriented Programming (Java)</td>
+          <td class="level">2</td>
+          <td class="course-code">CST8284</td>
+          <td class="course-des">
+            Exploring object-oriented programming methodology using the Java
+            programming language.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/linux.jpg" alt="linux icon" /></td>
+          <td class="course-title">
+            Operating System Fundamentals (GNU/Linux)
+          </td>
+          <td class="level">2</td>
+          <td class="course-code">CST8102</td>
+          <td class="course-des">
+            Exploring the basic concepts and components of Operating Systems
+            (OS) based on LINUX.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon"><img src="img/data2.jpg" alt="data icon" /></td>
+          <td class="course-title">Database Systems</td>
+          <td class="level">2</td>
+          <td class="course-code">CST2355</td>
+          <td class="course-des">
+            Acquiring practical experience using market-leading
+            object-relational database management systems like Oracle and MySQL.
+          </td>
+        </tr>
+        <tr class="item">
+          <td class="icon">
+            <img src="img/speech.jpg" alt="communication icon" />
+          </td>
+          <td class="course-title">
+            Technical Communication for Engineering Technologies
+          </td>
+          <td class="level">2</td>
+          <td class="course-code">ENL2019T</td>
+          <td class="course-des">
+            Exposed to exercises and assignments designed to foster independent
+            and collaborative critical thinking, research, writing, visual
+            communication and presentation skills related to technical topics
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer id="bottom">
+      <!-- <div class="contact"><h3>Contact Me:</h3></div> -->
+      <div class="grid-wrapper">
+        <div class="foot-grid">
+          <div class="contact-me">
+            <ul>
+              <li class="first-point">Contact Me</li>
+              <li class="bullet">Email: asdakak6@gmail.com</li>
+              <li class="bullet">Phone: 613-1213-7894</li>
+              <li class="bullet">Region: Ottawa, Canada</li>
+            </ul>
+          </div>
+          <div class="learning resource">
+            <ul>
+              <li class="first-point">Learning Resource</li>
+              <li class="bullet">
+                <a href="https://www.w3schools.com/" target="_blank"
+                  >W3C School</a
+                >
+              </li>
+              <li class="bullet">
+                <a href="https://www.freecodecamp.org/" target="_blank"
+                  >FreeCodeCamp</a
+                >
+              </li>
+              <li class="bullet">
+                <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="link-to-section">
+            <ul>
+              <li class="first-point">Content</li>
+              <li class="bullet"><a href="index.html">Self-introduction</a></li>
+              <li class="bullet"><a href="index.html">Tech interest</a></li>
+              <li class="bullet"><a href="index.html">Algonquin College</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="courses.js"></script>
+  </body>
+</html>

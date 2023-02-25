@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* min-width: 600px; */
+}
+html {
+  min-width: 1190px;
+  background-color: #87ceeb;
+}
+
+.preview-header {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  height: 100px;
+  background-color: #87ceeb;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#header-logo {
+  text-align: center;
+}
+i {
+  font-size: 80px;
+}
+nav {
+  background-color: rgb(99, 99, 99);
+  height: 48px;
+}
+.link-wrapper {
+  text-align: center;
+}
+.link-wrapper a {
+  font-size: 25px;
+  color: white;
+  line-height: 50px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 3px -2px;
+}
+.link-wrapper a:hover {
+  background-color: rgb(97, 167, 202);
+  text-decoration: none;
+  border: #87ceeb 1px solid;
+}
+.link-wrapper a:visited {
+  background-color: rgb(97, 167, 202);
+  text-decoration: none;
+  color: white;
+}
+.link-wrapper a:active {
+  text-decoration: none;
+  color: wheat;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 1000px;
+}
+
+#wrapper-header {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#myInput {
+  text-align: left;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 3px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+  /* border-collapse: collapse; */
+}
+
+.table-header > th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.item > td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 100;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.icon {
+  width: 10%;
+  text-align: center;
+}
+
+.icon > img {
+  width: 75px;
+}
+.course-title {
+  width: 20%;
+}
+.level {
+  width: 5%;
+  text-align: center;
+}
+.course-code {
+  width: 15%;
+  text-align: center;
+}
+.course-des {
+  width: 40%;
+}
+
+/*footer style*/
+footer {
+  height: 150px;
+  background-color: rgb(172, 172, 172);
+}
+
+.grid-wrapper {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+.foot-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 40px;
+}
+.foot-grid ul {
+  list-style-type: none;
+}
+.first-point {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.bullet {
+  color: darkred;
+}
+.bullet a {
+  color: darkred;
+}
+.bullet a:hover {
+  color: navy;
+  text-decoration: none;
+}
+
+/*further style test*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styles for responsive table */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted #ddd;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+/*style search bar and button*/
+/* Style the search bar */
+#myInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Change the color of the "Sort by Level" button */
+#sortBtn {
+  background-color: #2196f3;
+}
+
+/* Change the color of the "Show all" button */
+button:nth-child(3) {
+  background-color: #f44336;
+}
+
+/* Change the color of the "Level 1" button */
+button:nth-child(4) {
+  background-color: #ff9800;
+}
+
+/* Change the color of the "Level 2" button */
+button:nth-child(5) {
+  background-color: #00bcd4;
+}
